@@ -72,7 +72,7 @@ gem "bootsnap", require: false
 gem "sass-rails", "~> 6.0", ">= 6.0.0"
 gem "terser", "~> 1.2"
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem "bootstrap", "5.2.3"
+gem "bootstrap", "5.3.2"
 gem "json", "~> 2.8" # Legacy carry-over
 
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
