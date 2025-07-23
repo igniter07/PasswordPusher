@@ -4,7 +4,7 @@ source "https://rubygems.org"
 
 ruby ENV["CUSTOM_RUBY_VERSION"] || ">=3.2"
 
-gem "rails", "~> 7.2.1"
+gem "rails", "~> 7.2.2", ">= 7.2.2.1"
 
 group :development do
   gem "listen"
@@ -27,7 +27,7 @@ group :test do
   # Adds support for Capybara system testing and selenium driver
   gem "capybara", ">= 3.37.1", "< 4.0"
   gem "minitest"
-  gem "minitest-rails", ">= 6.1.0"
+  gem "minitest-rails", ">= 7.2.0"
   gem "minitest-reporters"
   gem "selenium-webdriver"
   gem "webdrivers", "~> 5.3", require: false
@@ -43,7 +43,7 @@ group :development, :test do
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
 
-  gem "erb_lint", "~> 0.7.0"
+  gem "erb_lint", "~> 0.8.0"
   gem "standardrb", "~> 1.0"
 end
 
@@ -72,11 +72,11 @@ gem "bootsnap", require: false
 gem "sass-rails", "~> 6.0", ">= 6.0.0"
 gem "terser", "~> 1.2"
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem "bootstrap", "5.2.3"
+gem "bootstrap", "5.3.0"
 gem "json", "~> 2.8" # Legacy carry-over
 
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
-gem "turbo-rails"
+gem "turbo-rails", ">= 2.0.12"
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
@@ -99,9 +99,9 @@ gem "simple_token_authentication"
 gem "kaminari", "~> 1.2"
 gem "invisible_captcha", "~> 2.3"
 
-gem "devise-i18n"
-gem "i18n-tasks", "~> 1.0.14" # , group: :development
-gem "rails-i18n", "~> 7.0.10"
+gem "devise-i18n", ">= 1.13.0"
+gem "i18n-tasks", "~> 1.0.15" # , group: :development
+gem "rails-i18n", "~> 8.0.0"
 gem "translation"
 
 # For File Uploads
@@ -127,6 +127,6 @@ gem "administrate", "~> 0.20.1"
 gem "rqrcode", "~> 2.2"
 gem "turnout2024", require: "turnout"
 
-gem "solid_queue", "~> 1.0"
+gem "solid_queue", "~> 1.2", ">= 1.2.1"
 
-gem "mission_control-jobs", "~> 0.5.0"
+gem "mission_control-jobs", "~> 0.6.0"
