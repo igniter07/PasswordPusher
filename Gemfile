@@ -4,7 +4,7 @@ source "https://rubygems.org"
 
 ruby ENV["CUSTOM_RUBY_VERSION"] || ">=3.2"
 
-gem "rails", "~> 7.2.1"
+gem "rails", "~> 7.2.2", ">= 7.2.2.2"
 
 group :development do
   gem "listen"
@@ -87,7 +87,7 @@ gem "jbuilder"
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
-gem "apipie-rails"
+gem "apipie-rails", ">= 1.5.0"
 gem "config"
 gem "devise", ">= 4.9.0"
 gem "foreman"
@@ -127,6 +127,6 @@ gem "administrate", "~> 0.20.1"
 gem "rqrcode", "~> 2.2"
 gem "turnout2024", require: "turnout"
 
-gem "solid_queue", "~> 1.0"
+gem "solid_queue", "~> 1.0", ">= 1.0.2"
 
-gem "mission_control-jobs", "~> 0.5.0"
+gem "mission_control-jobs", "~> 0.6.0"
