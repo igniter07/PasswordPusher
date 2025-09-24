@@ -20,7 +20,7 @@ group :development do
   gem "web-console"
 
   # A fully configurable and extendable Git hook manager
-  gem "overcommit", require: false
+  gem "overcommit", ">= 0.65.0", require: false
 end
 
 group :test do
@@ -29,7 +29,7 @@ group :test do
   gem "minitest"
   gem "minitest-rails", ">= 6.1.0"
   gem "minitest-reporters"
-  gem "selenium-webdriver"
+  gem "selenium-webdriver", ">= 4.11.0"
   gem "webdrivers", "~> 5.3", require: false
 end
 
@@ -62,7 +62,7 @@ gem "rack-cors"
 # gem 'therubyracer'
 #
 gem "high_voltage"
-gem "kramdown", require: false
+gem "kramdown", ">= 2.5.0", require: false
 gem "lockbox"
 
 # Reduces boot times through caching; required in config/boot.rb
